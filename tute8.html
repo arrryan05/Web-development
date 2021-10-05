@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & input</title>
+</head>
+
+<body>
+    <h2>This is a form</h2>
+    <form action="backend.php">
+        <label for="name">Name :</label>
+        <div>
+            <!--Blocking element-->
+            <input type="text" name="myname" id="name">
+            <!--input type is decided on the basis of this-->
+        </div>
+        <br>
+        <div>
+            Rollno.: <input type="text" name="myrole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myemail">
+            <!--by name attribute backend is connected with frontend-->
+        </div>
+
+        <br>
+        <div>
+            DOB: <input type="date" name="DOB" id="">
+        </div>
+        <br>
+        <div>
+            Bonus <input type="number" name="myBonus" id="Bonus">
+        </div>
+        <br>
+        <label for="check">Are you eligible?</label>
+        <div>
+            <input type="checkbox" name="myeligiblity" id="check">
+        </div>
+        <br>
+        <div>
+            Gender: Male<input type="radio" name="mygender" id=""> Female<input type="radio" name="mygender" id="">
+        </div>
+        <br>
+        <div>
+            Tell us about you: <br><textarea name="mytext" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <label for="laptop">Desired Laptop</label>
+        <div>
+            <select name="my Laptop" id="laptop">
+                <option value="Mac">MAcbook Pro</option>
+                <option value="WIN">Azus Zenbook</option>
+            </select>
+            <br>
+            <div>
+                <input type="submit" value="Submit Now">
+                <input type="reset" value="Reset Now">
+                <!--this helps to create a submit button-->
+            </div>
+
+    </form>
+</body>
+
+</html>
